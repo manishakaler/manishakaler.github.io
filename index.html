@@ -82,8 +82,8 @@
         }
 
         .cursor-dot.grow {
-            width: 46px;
-            height: 46px;
+            width: 44px;
+            height: 44px;
             background: var(--lilac);
         }
 
@@ -824,12 +824,20 @@
             flex-direction: column;
         }
 
-        .rec-card:nth-child(2n) {
+        .rec-card:nth-child(4n + 1) {
+            background: #fff;
+        }
+
+        .rec-card:nth-child(4n + 2) {
             background: var(--peach);
         }
 
-        .rec-card:nth-child(3n) {
+        .rec-card:nth-child(4n + 3) {
             background: var(--mint);
+        }
+
+        .rec-card:nth-child(4n) {
+            background: #fff;
         }
 
         .rec-card::before {
@@ -1326,12 +1334,9 @@
         <p class="sec-lead reveal">A few recommendations from people I've worked with.</p>
         <div class="rec-grid">
             <blockquote class="rec-card reveal">
-                <p> I worked closely with Manisha on the IEC program, where we handed over several development modules
-                    to ADP. Manisha was our main point of contact on the development side, and she did a fantastic job.
-                    I helped guide her through our project requirements, and she was always quick to grasp what we
-                    needed, handling the technical implementation in Angular smoothly. She consistently delivered
-                    high-quality work on every module and made managing the vendor relationship incredibly easy. I
-                    highly recommend her!
+                <p>
+                    I worked closely with Manisha on the IEC program, where we handed over several development modules to ADP. Manisha was our main point of contact on the development side, and she did a fantastic job.
+                    I helped guide her through our project requirements, and she was always quick to grasp what we needed, handling the technical implementation in Angular smoothly. She consistently delivered high-quality work on every module and made managing the vendor relationship incredibly easy. I highly recommend her!
                 </p>
                 <footer><span class="rec-name">
                         Laxmi Narayan Mondal </span><span class="rec-role">Technical Lead @ Infosys</span><span
@@ -1340,10 +1345,8 @@
             </blockquote>
 
             <blockquote class="rec-card reveal">
-                <p>It was riveting working with Manisha, whom I mentored at Arun Data Processing. She brought in views
-                    which helped us deliver at scale with high velocity. As an SDE2 and as a client facing role, she
-                    left no tables unturned to solve complex problems for both legacy software optimization and bringing
-                    in fast paced approach for migration to modern technologies for the client.
+                <p>
+                    It was riveting working with Manisha, whom I mentored at Arun Data Processing. She brought in views which helped us deliver at scale with high velocity. As an SDE2 and as a client facing role, she left no tables unturned to solve complex problems for both legacy software optimization and bringing in fast paced approach for migration to modern technologies for the client. Beyond her technological capabilities she is an amazing collaborator, with a vivid imagination and excellent communication skills.
                 </p>
                 <footer><span class="rec-name">
                         Rishabh Kanabar </span><span class="rec-role">Technical Lead @ Arun Data Processing</span><span
@@ -1352,29 +1355,21 @@
             </blockquote>
 
             <blockquote class="rec-card reveal">
-                <p>Manisha worked in my team as a sw engineer. During her time with the team, I found her to be
-                    inquisitive, eager to learn and dedicated. She was able to learn new technology quickly and
-                    demonstrated her abilities by delivering features quickly under constrained environment.
+                <p>
+                    Manisha worked in my team as a sw engineer. During her time with the team, I found her to be inquisitive, eager to learn and dedicated. She was able to learn new technology quickly and demonstrated her abilities by delivering features quickly under constrained environment.
                 </p>
                 <footer><span class="rec-name">
                         Srijan Mukherjee </span><span class="rec-role">Director of Engineering @ Visa</span><span
                         class="rec-rel">Skip Manager within the Cloud PaaS (O&I) team</span></footer>
             </blockquote>
             <blockquote class="rec-card reveal">
-                <p>She has a keen eye for detail, and is able to understand users' perspective with ease. To that end,
-                    she not only delivers what is assigned but goes above and beyond to suggest improvements and take
-                    ownership of building a good user experience. She is dedicated, responsible, has competitive energy
-                    which helps her push herself, and grasps concepts easily. She is very eager to learn new things,
-                    very receptive to feedback, and a pleasure to work with.
+                <p>
+                    She has a keen eye for detail, and is able to understand users' perspective with ease. To that end, she not only delivers what is assigned but goes above and beyond to suggest improvements and take ownership of building a good user experience. She is dedicated, responsible, has competitive energy which helps her push herself, and grasps concepts easily. She is very eager to learn new things, very receptive to feedback, and a pleasure to work with.
                 </p>
                 <footer><span class="rec-name">Akash Raj Pandey</span><span class="rec-role">Senior Engineering Manager
                         @ Visa</span><span class="rec-rel">Direct reporting manager within the Cloud PaaS team</span>
                 </footer>
             </blockquote>
-            <!-- <blockquote class="rec-card reveal">
-      <p>While she displayed full-stack development skills, it was her exceptional knack for UI design and development that truly set her apart. Her ability to seamlessly combine technical prowess with a keen eye for user-friendly interfaces was impressive.</p>
-      <footer><span class="rec-name">Ishita Agarwal</span><span class="rec-role">SDE3, Visa</span></footer>
-    </blockquote> -->
         </div>
         <p style="margin-top:24px;">
             <a href="https://www.linkedin.com/in/manishakaler/details/recommendations/" target="_blank" rel="noopener"

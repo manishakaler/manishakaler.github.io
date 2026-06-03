@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manishakaler.github.io/sitemap.xml

@@ -27,14 +27,16 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://manishakaler.github.io/" />
     <meta property="og:title" content="Manisha Kaler - Full-Stack Software Engineer | AI &amp; Backend" />
-    <meta property="og:description" content="Full-stack software engineer building backend systems and agentic AI tools. MS Computer Science at UMass Amherst, ex-Visa. Open to internships, co-ops, and 2027 full-time roles." />
-    <meta property="og:image" content="https://manishakaler.github.io/manisha.png" />
+    <meta property="og:description"
+        content="Full-stack software engineer building backend systems and agentic AI tools. MS Computer Science at UMass Amherst, ex-Visa. Open to internships, co-ops, and 2027 full-time roles." />
+    <meta property="og:image" content="https://manishakaler.github.io/assets/manisha.png" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Manisha Kaler - Full-Stack Software Engineer" />
-    <meta name="twitter:description" content="Full-stack software engineer building backend systems and agentic AI tools. MS Computer Science at UMass Amherst, ex-Visa. Open to internships, co-ops, and 2027 full-time roles." />
-    <meta name="twitter:image" content="https://manishakaler.github.io/manisha.png" />
+    <meta name="twitter:description"
+        content="Full-stack software engineer building backend systems and agentic AI tools. MS Computer Science at UMass Amherst, ex-Visa. Open to Summer 2027 internships, co-ops, and 2027 full-time roles." />
+    <meta name="twitter:image" content="https://manishakaler.github.io/assets/manisha.png" />
 
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -290,7 +292,7 @@
         }
 
         section {
-            padding: 80px 3vw;
+            padding: 60px 3vw;
         }
 
         .eyebrow {
@@ -546,34 +548,128 @@
             list-style: none;
             cursor: pointer;
             display: grid;
-            grid-template-columns: 140px 1fr auto;
-            gap: 18px;
-            align-items: center;
-            padding: 20px 24px;
+            grid-template-columns: 56px 1fr auto;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 22px 24px;
         }
 
         .exp-list summary::-webkit-details-marker {
             display: none;
         }
 
-        .exp-when {
+        /* .exp-when {
             font-family: 'Bricolage Grotesque';
             font-weight: 700;
             font-size: .95rem;
+        } */
+
+        .exp-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .exp-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .exp-logo .exp-logo-fallback {
+            font-family: 'Bricolage Grotesque';
+            font-weight: 800;
+            font-size: .8rem;
+            color: #8a8178;
+        }
+
+        .exp-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
         }
 
         .exp-role {
             font-family: 'Bricolage Grotesque';
             font-weight: 800;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
         }
 
-        .exp-role .org {
-            display: block;
+        .exp-org {
+            font-family: 'Space Grotesk';
+            font-weight: 600;
+            font-size: .95rem;
+            color: #3a342e;
+        }
+
+        .exp-when {
             font-family: 'Space Grotesk';
             font-weight: 500;
-            font-size: .9rem;
-            color: #5a534c;
+            font-size: .84rem;
+            color: #8a8178;
+            margin-top: 2px;
+        }
+
+
+        .edu-row {
+            display: grid;
+            grid-template-columns: 56px 1fr;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px 0;
+            border-top: var(--divider);
+        }
+
+        .edu-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .edu-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .edu-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .edu-school {
+            font-family: 'Bricolage Grotesque';
+            font-weight: 800;
+            font-size: 1.05rem;
+        }
+
+        .edu-deg {
+            font-family: 'Space Grotesk';
+            font-weight: 600;
+            font-size: .92rem;
+            color: #3a342e;
+        }
+
+        .edu-when {
+            font-family: 'Space Grotesk';
+            font-weight: 500;
+            font-size: .82rem;
+            color: #8a8178;
             margin-top: 2px;
         }
 
@@ -587,6 +683,7 @@
             font-size: 1.2rem;
             font-weight: 700;
             transition: transform .25s, background .2s;
+            margin-top: 4px;
         }
 
         .exp-list details[open] .chev {
@@ -614,29 +711,7 @@
             position: absolute;
             left: 0;
             font-weight: 700;
-            color: #8a5cf6;
-        }
-
-        .edu-row {
-            display: grid;
-            grid-template-columns: 140px 1fr;
-            gap: 18px;
-            padding: 16px 0;
-            border-top: var(--divider);
-        }
-
-        .edu-row .yr {
-            font-family: 'Bricolage Grotesque';
-            font-weight: 700;
-        }
-
-        .edu-row .deg {
-            font-weight: 700;
-        }
-
-        .edu-row .sch {
-            color: #5a534c;
-            font-size: .95rem;
+            color: black;
         }
 
         /* ---------- Projects ---------- */
@@ -644,7 +719,7 @@
             font-family: 'Bricolage Grotesque';
             font-weight: 700;
             font-size: 1.25rem;
-            margin: 34px 0 16px;
+            margin: 16px 0 16px;
         }
 
         .proj-grid {
@@ -1028,12 +1103,18 @@
             }
 
             .exp-list summary {
-                grid-template-columns: 1fr auto;
-                gap: 6px;
+                grid-template-columns: 44px 1fr auto;
+                gap: 12px;
+                padding: 18px;
             }
 
-            .exp-when {
-                order: -1;
+            .exp-logo {
+                width: 44px;
+                height: 44px;
+            }
+
+            .exp-role {
+                font-size: 1.02rem;
             }
 
             .updates-list li {
@@ -1046,12 +1127,17 @@
             }
 
             .edu-row {
-                grid-template-columns: 1fr;
-                gap: 2px;
+                grid-template-columns: 44px 1fr;
+                gap: 12px;
+            }
+
+            .edu-logo {
+                width: 44px;
+                height: 44px;
             }
 
             section {
-                padding: 64px 6vw;
+                padding: 44px 6vw;
             }
         }
     </style>
@@ -1077,11 +1163,11 @@
         <a href="#about" class="logo">Manisha<span>.</span></a>
         <div class="nav-links" id="navlinks">
             <span class="nav-close" id="navClose" aria-label="Close menu">✕</span>
-            <a href="#updates">Updates</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#awards">Awards</a>
             <a href="#recommendations">Recommendations</a>
+            <a href="#updates">Updates</a>
             <a href="#contact">Contact</a>
             <a href="Manisha_MSCS_CV_Dec.pdf" download class="nav-cta">Download CV ↓</a>
         </div>
@@ -1093,19 +1179,22 @@
         <div class="blob a"></div>
         <div class="about-landing">
             <div class="al-photo reveal">
-                <img src="manisha.png" alt="Manisha Kaler, full-stack software engineer and MS Computer Science student at UMass Amherst"
+                <img src="assets/manisha.png"
+                    alt="Manisha Kaler, full-stack software engineer and MS Computer Science student at UMass Amherst"
                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
                 <div class="ph-fallback" style="display:none;">Add your photo<br>as manisha.png</div>
             </div>
             <div class="al-content reveal">
-                <span class="eyebrow">Software Engineer · MSCS @ UMass</span>
+                <span class="eyebrow">Software Engineering Intern @ MBRDNA · MSCS @ UMass</span>
                 <h1>Manisha Kaler</h1>
-                <p class="lead">I am a full-stack software engineer focused on backend infrastructure, performance
-                    engineering, systems programming and increasingly on AI and agentic LLM tooling. I write clean code built for speed and
-                    scale, backed by four years of industry experience engineering software ranging from global cloud
-                    infrastructure at Visa to a national tax-filing platform serving over 80 million users.</p>
-                <p class="lead">Currently, I am pursuing my MS in Computer Science at UMass Amherst (3.9 GPA, expected
-                    December 2027), following a B.Tech in Computer Science and Engineering from IIT Jodhpur.</p>
+                <p class="lead">I'm a full-stack software engineer focused on backend infrastructure and performance
+                    engineering, with growing depth in AI and agentic LLM tooling. I’m currently a <strong>Software Engineering Intern at Mercedes-Benz Research & Development North America (MBRDNA)</strong>, working with the AI & Infotainment backend team in San Jose, CA.
+                    <br>
+                    Previously, I spent four years shipping production systems at scale - from
+                    global cloud infrastructure at Visa to powering India's national tax-filing platform for 80M+
+                    taxpayers at ADP.</p>
+                <p class="lead">I'm pursuing my MS in Computer Science at UMass Amherst (3.9 GPA, expected December
+                    2027), following a B.Tech in Computer Science and Engineering from IIT Jodhpur.</p>
                 <div class="links-row">
                     <a href="mailto:manishamanis@umass.edu" class="pill-link">Email</a>
                     <a href="https://www.linkedin.com/in/manishakaler" target="_blank" rel="noopener"
@@ -1141,7 +1230,8 @@
                     </div>
                     <div>
                         <h4>AI</h4>
-                        <div class="pills"><span>RAG</span><span>Gemini API</span><span>Agentic AI</span><span>LLM Agents</span><span>Prompt Engineering</span></div>
+                        <div class="pills"><span>RAG</span><span>Gemini API</span><span>Agentic AI</span><span>LLM
+                                Agents</span><span>Prompt Engineering</span></div>
                     </div>
                     <div>
                         <h4>Cloud &amp; DevOps</h4>
@@ -1153,37 +1243,12 @@
 
                 <!-- Edit or remove this status line as you like -->
                 <div class="status-callout">
-                    <span>📣 <strong>Open to software engineering internships &amp; co-ops</strong> (Fall 2026
-                        &amp; Spring 2027) and full-time roles starting 2027. Feel
+                    <span>📣 <strong>Open to software engineering internships &amp; co-ops</strong> (Spring 2027 &amp; Summer 2027) and full-time roles starting Dec 2027. Feel
                         free to <a href="mailto:manishamanis@umass.edu">reach out →</a></span>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- UPDATES -->
-    <section id="updates">
-        <span class="eyebrow reveal">Updates</span>
-        <h2 class="sec-head reveal">What's new.</h2>
-        <ul class="updates-list reveal">
-            <li><span class="date">Jan 2026</span><span>Started M.S. in Computer Science at UMass Amherst.</span></li>
-            <li><span class="date">Dec 2025</span><span>Concluded nearly three years at Arun Data Processing (ADP)
-                    before beginning graduate studies.</span></li>
-            <li><span class="date">Nov 2023</span><span>Promoted to Software Engineer 2 at ADP.</span></li>
-            <li><span class="date">Feb 2023</span><span>Joined ADP as a Software Engineer.</span></li>
-            <li><span class="date">2022</span><span>Received multiple Go Beyond Awards at Visa for technical
-                    contributions and impact.</span></li>
-            <li class="extra"><span class="date">Jul 2021</span><span>Joined Visa as a Software Engineer after receiving
-                    a pre-placement offer from my internship.</span></li>
-            <li class="extra"><span class="date">May 2021</span><span>Graduated from IIT Jodhpur with a B.Tech in
-                    Computer Science and Engineering.</span></li>
-            <li class="extra"><span class="date">May 2020</span><span>Started a Software Engineering internship at
-                    Visa.</span></li>
-            <li class="extra"><span class="date">Aug 2017</span><span>Started B.Tech in Computer Science and Engineering
-                    at IIT Jodhpur.</span></li>
-        </ul>
-        <button class="more-btn" id="moreUpdates">More ↓</button>
-    </section>
 
     <!-- EXPERIENCE (expandable) -->
     <section id="experience">
@@ -1193,8 +1258,39 @@
         <div class="exp-list reveal">
             <details>
                 <summary>
-                    <span class="exp-when">Feb 2023 - Dec 2025</span>
-                    <span class="exp-role">Software Engineer 2<span class="org">Arun Data Processing</span></span>
+                    <span class="exp-logo">
+                        <img src="assets/MBRDNA-logo.jpeg" alt="Mercedes-Benz R&D North America logo"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+                        <span class="exp-logo-fallback" style="display:none;">MB</span>
+                    </span>
+                    <span class="exp-info">
+                        <span class="exp-role">Software Engineering Intern (Backend)</span>
+                        <span class="exp-org">Mercedes-Benz R&amp;D North America</span>
+                        <span class="exp-when">Aug 2026 - Present · AI &amp; Infotainment Team</span>
+                    </span>
+                    <!-- <span class="chev">
+                        +
+
+                    </span> -->
+                </summary>
+                <div class="exp-detail">
+                    <ul>
+                        <!-- <li></li> -->
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <span class="exp-logo">
+                        <img src="assets/ADP-logo.jpeg" alt="Arun Data Processing logo"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+                        <span class="exp-logo-fallback" style="display:none;">ADP</span>
+                    </span>
+                    <span class="exp-info">
+                        <span class="exp-role">Software Engineer 2</span>
+                        <span class="exp-org">Arun Data Processing</span>
+                        <span class="exp-when">Feb 2023 - Dec 2025</span>
+                    </span>
                     <span class="chev">+</span>
                 </summary>
                 <div class="exp-detail">
@@ -1213,8 +1309,16 @@
             </details>
             <details>
                 <summary>
-                    <span class="exp-when">Jul 2021 - Jan 2023</span>
-                    <span class="exp-role">Software Engineer<span class="org">Visa</span></span>
+                    <span class="exp-logo">
+                        <img src="assets/visa-logo.png" alt="Visa logo"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+                        <span class="exp-logo-fallback" style="display:none;">Visa</span>
+                    </span>
+                    <span class="exp-info">
+                        <span class="exp-role">Software Engineer</span>
+                        <span class="exp-org">Visa</span>
+                        <span class="exp-when">Jul 2021 - Jan 2023 · Cloud PaaS Team</span>
+                    </span>
                     <span class="chev">+</span>
                 </summary>
                 <div class="exp-detail">
@@ -1234,8 +1338,16 @@
             </details>
             <details>
                 <summary>
-                    <span class="exp-when">May 2020 - Jul 2020</span>
-                    <span class="exp-role">Software Engineer Intern<span class="org">Visa</span></span>
+                    <span class="exp-logo">
+                        <img src="assets/visa-logo.png" alt="Visa logo"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+                        <span class="exp-logo-fallback" style="display:none;">Visa</span>
+                    </span>
+                    <span class="exp-info">
+                        <span class="exp-role">Software Engineer Intern</span>
+                        <span class="exp-org">Visa</span>
+                        <span class="exp-when">May 2020 - Jul 2020</span>
+                    </span>
                     <span class="chev">+</span>
                 </summary>
                 <div class="exp-detail">
@@ -1248,18 +1360,34 @@
                 </div>
             </details>
         </div>
-
-        <h3 class="group-label reveal">Education</h3>
+    </section>
+    <section id="education">
+        <span class="eyebrow reveal">Academia</span>
+        <h2 class="sec-head reveal">Education.</h2>
+        <!-- <h2 class="group-label reveal">Education</h2> -->
         <div class="reveal">
             <div class="edu-row">
-                <span class="yr">Jan 2026 - May 2027 (Expected)</span>
-                <span><span class="deg">MS, Computer Science</span> · 3.9 GPA<br><span class="sch">University of
-                        Massachusetts Amherst - ML, Performance Engineering, Data Science</span></span>
+                <span class="edu-logo">
+                    <img src="assets/umass-logo.png" alt="UMass Amherst logo"
+                        onerror="this.parentElement.style.display='none';" />
+                </span>
+                <span class="edu-info">
+                    <span class="edu-school">University of Massachusetts Amherst</span>
+                    <span class="edu-deg">MS, Computer Science · 3.9 GPA</span>
+                    <span class="edu-when">Jan 2026 - Dec 2027 (Expected) · ML, Performance Engineering, Data
+                        Science</span>
+                </span>
             </div>
             <div class="edu-row">
-                <span class="yr">Aug 2017 - May 2021</span>
-                <span><span class="deg">B.Tech, Computer Science &amp; Engineering</span><br><span class="sch">Indian
-                        Institute of Technology, Jodhpur</span></span>
+                <span class="edu-logo">
+                    <img src="assets/iitj-logo-t.png" alt="IIT Jodhpur logo"
+                        onerror="this.parentElement.style.display='none';" />
+                </span>
+                <span class="edu-info">
+                    <span class="edu-school">Indian Institute of Technology, Jodhpur</span>
+                    <span class="edu-deg">B.Tech, Computer Science &amp; Engineering</span>
+                    <span class="edu-when">Aug 2017 - May 2021</span>
+                </span>
             </div>
         </div>
     </section>
@@ -1343,7 +1471,7 @@
                 <p>Resolved a P1 role-based access-control issue in ScalableRun 2.0 for sudo-disabled users - covering
                     many scenarios with thorough documentation, test cases, and a fast turnaround.</p>
                 <div class="aw-proof">
-                    <img src="Visa-Award-3.png" alt="Visa recognition - P1 Access-Control Fix" class="aw-thumb"
+                    <img src="assets/Visa-Award-3.png" alt="Visa recognition - P1 Access-Control Fix" class="aw-thumb"
                         data-full="Visa-Award-3.png"
                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
                     <div class="aw-ph" style="display:none;">Add award-3.png to show the original</div>
@@ -1356,7 +1484,7 @@
                     job-status logic onto webhooks, with UI changes and thorough testing.</p>
                 <span class="aw-meta">with Jill Jani · Dhanuesh R C · Krishnakumar R</span>
                 <div class="aw-proof">
-                    <img src="Visa-Award-4.png" alt="Visa We Collaborate recognition" class="aw-thumb"
+                    <img src="assets/Visa-Award-4.png" alt="Visa We Collaborate recognition" class="aw-thumb"
                         data-full="Visa-Award-4.png"
                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
                     <div class="aw-ph" style="display:none;">Add award-4.png to show the original</div>
@@ -1369,8 +1497,8 @@
                     resource and time crunch - going the extra mile to hit the sprint deadline.</p>
                 <span class="aw-meta">with Akash Raj Pandey · Ishita Agarwal</span>
                 <div class="aw-proof">
-                    <img src="Visa-Award-1.png" alt="Visa recognition - ScalableRun March Sprint" class="aw-thumb"
-                        data-full="Visa-Award-1.png"
+                    <img src="assets/Visa-Award-1.png" alt="Visa recognition - ScalableRun March Sprint"
+                        class="aw-thumb" data-full="Visa-Award-1.png"
                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
                     <div class="aw-ph" style="display:none;">Add award-1.png to show the original</div>
                 </div>
@@ -1381,7 +1509,7 @@
                 <p>Owned a complex user-access-validation feature end to end - resolving bugs, shipping a tested hotfix,
                     and adding server-level whitelisting without disrupting existing flows.</p>
                 <div class="aw-proof">
-                    <img src="Visa-Award-2.png" alt="Visa recognition - User Access Validation" class="aw-thumb"
+                    <img src="assets/Visa-Award-2.png" alt="Visa recognition - User Access Validation" class="aw-thumb"
                         data-full="Visa-Award-2.png"
                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
                     <div class="aw-ph" style="display:none;">Add award-2.png to show the original</div>
@@ -1401,8 +1529,12 @@
         <div class="rec-grid">
             <blockquote class="rec-card reveal">
                 <p>
-                    I worked closely with Manisha on the IEC program, where we handed over several development modules to ADP. Manisha was our main point of contact on the development side, and she did a fantastic job.
-                    I helped guide her through our project requirements, and she was always quick to grasp what we needed, handling the technical implementation in Angular smoothly. She consistently delivered high-quality work on every module and made managing the vendor relationship incredibly easy. I highly recommend her!
+                    I worked closely with Manisha on the IEC program, where we handed over several development modules
+                    to ADP. Manisha was our main point of contact on the development side, and she did a fantastic job.
+                    I helped guide her through our project requirements, and she was always quick to grasp what we
+                    needed, handling the technical implementation in Angular smoothly. She consistently delivered
+                    high-quality work on every module and made managing the vendor relationship incredibly easy. I
+                    highly recommend her!
                 </p>
                 <footer><span class="rec-name">
                         Laxmi Narayan Mondal </span><span class="rec-role">Technical Lead @ Infosys</span><span
@@ -1412,7 +1544,12 @@
 
             <blockquote class="rec-card reveal">
                 <p>
-                    It was riveting working with Manisha, whom I mentored at Arun Data Processing. She brought in views which helped us deliver at scale with high velocity. As an SDE2 and as a client facing role, she left no tables unturned to solve complex problems for both legacy software optimization and bringing in fast paced approach for migration to modern technologies for the client. Beyond her technological capabilities she is an amazing collaborator, with a vivid imagination and excellent communication skills.
+                    It was riveting working with Manisha, whom I mentored at Arun Data Processing. She brought in views
+                    which helped us deliver at scale with high velocity. As an SDE2 and as a client facing role, she
+                    left no tables unturned to solve complex problems for both legacy software optimization and bringing
+                    in fast paced approach for migration to modern technologies for the client. Beyond her technological
+                    capabilities she is an amazing collaborator, with a vivid imagination and excellent communication
+                    skills.
                 </p>
                 <footer><span class="rec-name">
                         Rishabh Kanabar </span><span class="rec-role">Technical Lead @ Arun Data Processing</span><span
@@ -1422,7 +1559,9 @@
 
             <blockquote class="rec-card reveal">
                 <p>
-                    Manisha worked in my team as a sw engineer. During her time with the team, I found her to be inquisitive, eager to learn and dedicated. She was able to learn new technology quickly and demonstrated her abilities by delivering features quickly under constrained environment.
+                    Manisha worked in my team as a sw engineer. During her time with the team, I found her to be
+                    inquisitive, eager to learn and dedicated. She was able to learn new technology quickly and
+                    demonstrated her abilities by delivering features quickly under constrained environment.
                 </p>
                 <footer><span class="rec-name">
                         Srijan Mukherjee </span><span class="rec-role">Director of Engineering @ Visa</span><span
@@ -1430,7 +1569,11 @@
             </blockquote>
             <blockquote class="rec-card reveal">
                 <p>
-                    She has a keen eye for detail, and is able to understand users' perspective with ease. To that end, she not only delivers what is assigned but goes above and beyond to suggest improvements and take ownership of building a good user experience. She is dedicated, responsible, has competitive energy which helps her push herself, and grasps concepts easily. She is very eager to learn new things, very receptive to feedback, and a pleasure to work with.
+                    She has a keen eye for detail, and is able to understand users' perspective with ease. To that end,
+                    she not only delivers what is assigned but goes above and beyond to suggest improvements and take
+                    ownership of building a good user experience. She is dedicated, responsible, has competitive energy
+                    which helps her push herself, and grasps concepts easily. She is very eager to learn new things,
+                    very receptive to feedback, and a pleasure to work with.
                 </p>
                 <footer><span class="rec-name">Akash Raj Pandey</span><span class="rec-role">Senior Engineering Manager
                         @ Visa</span><span class="rec-rel">Direct reporting manager within the Cloud PaaS team</span>
@@ -1441,6 +1584,37 @@
             <a href="https://www.linkedin.com/in/manishakaler/details/recommendations/" target="_blank" rel="noopener"
                 class="pill-link">See all on LinkedIn ↗</a>
         </p>
+    </section>
+
+
+    <!-- UPDATES -->
+    <section id="updates">
+        <span class="eyebrow reveal">Updates</span>
+        <h2 class="sec-head reveal">What's new.</h2>
+        <ul class="updates-list reveal">
+            <li><span class="date">August 2026</span><span> Joined Mercedes-Benz R&D, NA as a Software Engineer Intern
+                    (Backend) in the AI and Infotainment team</span></li>
+            <li><span class="date">June 2026</span><span> Participated in Brown Systems Week’s summer cohort at Brown University, focused on computer systems and performance engineering.</span></li>
+            <li><span class="date">Jan 2026</span><span>Started M.S. in Computer Science at UMass Amherst.</span></li>
+            <li class="extra"><span class="date">Dec 2025</span><span>Concluded nearly three years at Arun Data
+                    Processing (ADP)
+                    before beginning graduate studies.</span></li>
+            <li class="extra"><span class="date">Nov 2023</span><span>Promoted to Software Engineer 2 at ADP.</span>
+            </li>
+            <li class="extra"> <span class="date">Feb 2023</span><span>Joined ADP as a Software Engineer.</span></li>
+            <li class="extra"><span class="date">2022</span><span>Received multiple Go Beyond Awards at Visa for
+                    technical
+                    contributions and impact.</span></li>
+            <li class="extra"><span class="date">Jul 2021</span><span>Joined Visa as a Software Engineer after receiving
+                    a pre-placement offer from my internship.</span></li>
+            <li class="extra"><span class="date">May 2021</span><span>Graduated from IIT Jodhpur with a B.Tech in
+                    Computer Science and Engineering.</span></li>
+            <li class="extra"><span class="date">May 2020</span><span>Started a Software Engineering internship at
+                    Visa.</span></li>
+            <li class="extra"><span class="date">Aug 2017</span><span>Started B.Tech in Computer Science and Engineering
+                    at IIT Jodhpur.</span></li>
+        </ul>
+        <button class="more-btn" id="moreUpdates">More ↓</button>
     </section>
 
     <!-- CONTACT -->
@@ -1457,7 +1631,7 @@
 
 
     <footer>
-        <span>© 2026 Manisha Kaler · Boston, MA</span>
+        <span>© 2026 Manisha Kaler · San Jose, CA</span>
         <span class="credit">Inspired by the <a href="https://www.framer.com/marketplace/templates/meelo/"
                 target="_blank" rel="noopener">Meelo template</a> on Framer · Built with ♥︎</span>
     </footer>
